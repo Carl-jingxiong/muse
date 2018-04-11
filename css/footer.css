@@ -1,0 +1,125 @@
+/*底部样式*/
+.footer-half{
+  width:1000px;
+  margin:0 auto;
+  position:relative;
+}
+/*1、地址，联系方式*/
+#footer div.footer-1{
+  background-image:linear-gradient(to bottom,#f4f4f4 0%,#fff 5px);
+  background-image:linear-gradient(to top,#C0C0C0 0%,#fff 5px);
+}
+#footer div.footer-1>div.footer-half{
+  background:url(../img/footer/bg33.gif);
+  width:1002px;
+  height:84px;
+  position:relative;
+}
+#footer div.footer-1>div.footer-half a{
+  position:absolute;
+  top:45px;
+  left:55px;
+  font-size:25px;
+  color:#333333;
+}
+#footer div.footer-1>div.footer-half i{
+  font-style:normal;
+  color:#DC0000;
+}
+#footer div.footer-1>div.footer-half>a:nth-child(2){
+  position:absolute;
+  top:35px;
+  left:270px;
+  font-size:14px;
+  color:#6B6B6B;
+}
+#footer div.footer-1>div.footer-half>a:nth-child(2):hover{
+  color:#000;
+}
+#footer div.footer-1>div.footer-half>p>a{
+  position:absolute;
+  top:36px;
+  left:765px;
+}
+#footer div.footer-1>div.footer-half .arrow-top{
+  position:absolute;
+  top:15px;
+  right:15px;
+}
+/****微博QQ等鼠标移入事件由JS实现*****/
+/*2、底部logo，关于我们*/
+#footer div.footer-2{
+  height:140px;
+  background-color:#E3E3E3;
+}
+/*#footer div.footer-2>div.footer-half{
+  display:flex;
+  justify-content:space-between;
+}*/
+#footer div.footer-2>div.footer-half>h1{
+  position:absolute;
+  top:30px;
+  width:320;
+  height:60px;
+}
+#footer>div.footer-2>div.footer-half>div{
+  position:absolute;
+  /*display:flex;
+  justify-content:space-between;*/
+  top:15px;
+  width:660px;
+  right:50px;
+}
+#footer>div.footer-2>div.footer-half ul>li{
+  float:right;
+  display:inline-block;
+  width:120px;
+  height:32px;
+  background-color:#fff;
+  margin-right:20px;
+  line-height: 32px;
+  text-align: center;
+  margin-top:15px;
+  font-weight:bold;
+  font-size:12px;
+}
+/**/
+
+/**/
+#footer>div.footer-2>div.footer-half ul>li:hover{
+  background-color:#000;
+}
+#footer>div.footer-2>div.footer-half ul>li:hover a{
+  color:#fff;
+  font-size:14px;
+}
+/*3、版权*/
+#footer>div.footer-3{
+  height:90px;
+  background-color:#CACACA;
+  color:#fff;
+  font-size:14px;
+  box-sizing:border-box;
+  padding-top:15px;
+}
+#footer>div.footer-3>div.footer-half p{
+  line-height:20px;
+}
+/*4、友情链接*/
+#footer>div.footer-4{
+  height:60px;
+  line-height:20px;
+  color:#CCC;
+  padding-top:10px;
+}
+#footer>div.footer-4 a{
+  color:#CCC;
+  font-size:12px;
+}
+#footer>div.footer-4 a:hover{
+  color:#000;
+  text-decoration:underline;
+}
+
+
+

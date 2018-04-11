@@ -1,0 +1,43 @@
+
+body{
+    font:13px "Arial","sumhei",Helvetica,sans-serif;
+    color:#666666;
+    margin:0;
+    padding:0;
+}
+p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+i,s{
+    font-style: normal;
+}
+a{
+    color:#666666;
+    text-decoration:none;
+}
+/*a:hover{
+    color:#666;
+}*/
+img{
+    vertical-align:middle;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.left { float:left;}
+.right { float:right;}
+.fixed-nav{
+    position:fixed;
+    z-index:10;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    transition:all 0.1s;
+    margin:0 auto;
+}
+

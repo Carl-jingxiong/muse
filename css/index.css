@@ -1,0 +1,380 @@
+/*轮播CSS*/
+.banner{
+  width:100%;
+  /*height:688px;*/
+  position:relative;
+}
+.banner>a:nth-child(2),.banner>a:last-child{
+  display:block;
+  position:absolute;
+  opacity: 0;
+  transition: all .5s linear;
+  top:0;
+  left:0;
+}
+
+.banner>a.banner-show{
+  opacity:1;
+  z-index:2;
+}
+.banner>a>img{
+  width:100%;
+}
+
+/*开始：共用的背景设置和阴影，控制居中以及整体宽度*/
+#index .index-half{
+  /*左右阴影*/
+  width:1020px;
+  padding:0 12.5px;
+  position: relative;
+  margin:0 auto;
+  background:url(../img/index/bg2.png) repeat-y center top;
+}
+
+/*结束：共用的背景设置和阴影，控制居中以及整体宽度*/
+
+/*开始：可共用样式标题 .tle*/
+.tle{
+  height:90px;
+  position:relative
+}
+.tle>b{
+  position:absolute;
+  top:25px;
+  left:10px;
+}
+.tle>i{
+  position:absolute;
+  right:20px;
+  top:30px;
+}
+/*结束：以上是共用样式.tle*/
+
+/*开始：楼层底部照片展示*/
+.floor-bottom{
+  clear:both;
+  padding:30px 0;
+  border-top:1px dotted #ccc;
+  border-bottom:1px dotted #ccc;
+  margin-top:30px;
+}
+/*结束：楼层底部照片展示*/
+
+/*开始：内容部分统一样式 内容部分外层div必须加，左右边框*/
+div.content{
+  position:relative;
+  margin-left:12.5px;
+  margin-right:12.5px;
+}
+/*结束：内容部分统一样式*/
+
+
+
+/*开始：楼层一CSS*/
+div.floor-a-left{
+  width:378px;
+  border:1px solid #ccc;
+  display:inline-block;
+}
+/********第一层左侧轮播**********/
+div.sub-banner{
+  width:378px;
+  height:260px;
+  overflow: hidden;
+  position:relative;
+}
+div.sub-banner>ul.sub-img{
+  position: absolute;
+  left:0;
+}
+div.sub-banner>ul.sub-img img{
+  width:378px;
+  height:260px;
+}
+div.sub-banner>ul.sub-img>li{
+  float:left;
+  width:378px;
+}
+div.sub-banner>ul.sub-case{
+  position:absolute;
+  right:10px;
+  bottom:10px;
+}
+div.sub-banner>ul.sub-case>li{
+  width:20px;
+  height:25px;
+  background:#fff;
+  text-align: center;
+  line-height: 25px;
+  border:#000 solid 1px;
+  margin-right:5px;
+  float:left;
+}
+div.sub-banner>ul.sub-case>li.sub-active{
+  border:#FF6600 solid 1px;
+  color:#FF6600;
+}
+  /*第一层预约*/
+div.subscribe{
+  width:360px;
+}
+div.subscribe>h3>a{
+  display:block;
+  text-align: center;
+  line-height:40px;
+  font-size:19px;
+  color:#000;
+}
+div.subscribe>p.p-one{
+  height:76px;
+  position: relative;
+}
+div.subscribe>p.p-one>img{
+  position:absolute;
+  left:-30px;
+  top:2px;
+}
+div.subscribe>p.p-one>i{
+  position:absolute;
+  font-size:25px;
+  font-weight:bold;
+  color:#fff;
+  top:22px;
+  left:15px;
+}
+div.subscribe>p.p-one>span{
+  display:inline-block;
+  position: absolute;
+  right:60px;
+  top:5px;
+  color:#000;
+}
+div.subscribe>p.p-one>span>s{
+  color:#CC3333;
+  font-weight:bold;
+  line-height:20px;
+}
+div.subscribe>p.p-one>span>span{
+  font-weight:bold;
+  line-height:20px;
+}
+div.subscribe>p.p-two{
+  font-size:1.2em;
+  width:360px;
+  box-sizing:border-box;
+  padding:10px 25px;
+}
+div.subscribe>p.p-two>strong{
+  color:#CC3333;
+}
+div.subscribe>div.p-three{
+  display:inline-block;
+  width:360px;
+  height:80px;
+  overflow:hidden;
+  box-sizing:border-box;
+  padding:2px 5px;
+  color:#C2C2C2;
+}
+div.subscribe>div.p-three li{
+  margin-top:10px;
+}
+
+/*第一层右侧选装特效*/
+.floor-a-right{
+  padding-top:3px;
+  width:570px;
+  height:500px;
+  float: right;
+}
+
+
+
+
+
+/*结束：楼层一CSS*/
+
+
+/*开始：楼层二CSS*/
+.floor-b-show{
+  width:974px;
+  /*background:#faa;*/
+}
+/*遮罩特效部分start*/
+a.show-case{
+    display:block;
+    width:233px;
+    height:350px;
+    position: relative;
+    float: left;
+    margin-left:10px;
+    margin-bottom:10px;
+    overflow: hidden;
+}
+.show-case>img{
+    width:233px;
+    height:350px;
+    position: absolute;
+}
+div.showcase-shade{
+    background:url('../img/showcase/zoverlay.png');
+    position:relative;
+    width:233px;
+    height:350px;
+    z-index: 2;
+    left:0;
+    top:350px;   
+    display: block;
+    transition:all .8s;
+}
+a.show-case>div.showcase-mouseover{
+    top:0;
+}
+
+/*遮罩特效end*/
+/*结束：楼层二CSS*/
+
+/*开始：楼层三CSS*/
+
+.floor-c .change-img .img-big{
+  display:inline-block;
+  width:974px;
+  height:380px;
+}
+.floor-c .change-img>ul.img-list{
+  width:974px;
+  height:120px;
+  padding: 10px 4px;
+  background: #ccc;
+}
+.floor-c .change-img>ul>li{
+  display: inline-block;
+  width:182px;
+  height:100px;
+  margin-right:8px;
+}
+.floor-c .change-img>ul li img{
+  width:182px;
+  height:100px;
+  
+}
+/*结束：楼层三CSS*/
+
+/*开始：楼层四CSS*/
+.floor-d .team-list{
+  padding-left: 15px;
+}
+.floor-d .team-li{
+  display: inline-block;
+  position:relative;
+  margin-right:15px;
+}
+.floor-d .team-li s{
+  position:absolute;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+.floor-d .team-li p{
+  font-size:1.2em;
+  height:50px;
+  text-align: center;
+  line-height: 50px;
+}
+/*结束：楼层四CSS*/
+
+
+/*开始：楼层五CSS*/
+.floor-e>.content{
+  position:relative;
+  overflow:auto;
+  height:450px;
+}
+.floor-e>.content>div{
+  width:452px;
+  position: absolute;
+  top:0;
+}
+.floor-e>.content>.e-left{
+  left:20px;
+}
+.floor-e>.content>.e-right{
+  right:20px;
+}
+/*C:\xampp\htdocs\muse_project\my_muse\img\index\1-1F3251A04SJ.jpg*/
+.floor-e>.content .comment-list p{
+  position: relative;
+}
+.floor-e>.content .comment-list ins{
+  display:inline-block;
+  width: 107px;
+  height:107px;
+  padding:5px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+}
+.floor-e>.content .comment-list ins img{
+  width:95px;
+  height:95px;
+}
+.floor-e>.content .comment-list i{
+  position:absolute;
+  top:5px;
+  left:120px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color:#adadad;
+}
+.floor-e>.content .comment-list b{
+  position:absolute;
+  top:25px;
+  left:120px;
+  color:black;
+  line-height: 25px;
+}
+.floor-e>.content .comment-list span{
+  position:absolute;
+  top:50px;
+  left:120px;
+  height:40px;
+  overflow: hidden;
+  font-size:10px;
+  line-height: 20px;
+}
+/*列表*/
+.floor-e ul{
+  position: absolute;
+  height:200px;
+}
+.floor-e ul>li{
+  color:#B8B8BE;
+  position:relative;
+  width:400px;
+  display:block;
+  height:30px;
+  border-bottom:1px dotted gray;
+  line-height: 30px;
+}
+.floor-e ul>li>s{
+  text-decoration:none;
+  position: absolute;
+  right:10px;
+}
+
+
+/*结束：楼层五CSS*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+

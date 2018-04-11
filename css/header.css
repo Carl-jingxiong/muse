@@ -1,0 +1,136 @@
+/*头部样式*/
+/*顶部灰色条*/
+#header>div.header-top{
+  height:20px;
+  background:#CDCDCD;
+}
+#header>div.header-top ul{
+  width:50%;
+  margin:0 auto;
+}
+#header>div.header-top ul li{
+  float:right;
+  margin-right:10px;
+}
+#header>div.header-top a{
+  color:#fff;
+}
+#header>div.header-top a:hover{
+  color:#666;
+}
+/*顶部导航*/
+#header .header-nav{
+  height:75px;
+  background:#F2F2F2;
+}
+#header .header-m{
+  width:1000px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#header div.logo{
+  width:300px;
+  height:75px;
+}
+#header div.nav{
+  height:40px;
+  text-align: center;
+  clear:both;
+  float:right;
+  margin-right:100px;
+}
+#header div.nav>ul>li{
+  position:relative;
+}
+#header div.nav>ul>li,#header div.nav>ul>img{
+  float:right;
+  height:51px;
+  position:relative;
+  top:18px;
+  right:20px;
+}
+#header div.nav>ul>li:hover a.nav-a{
+  color:#AA0000;
+  top:13px;
+}
+#header div.nav>ul>li:hover span{
+  bottom:16px;
+}
+#header div.nav>ul>img{
+  width:16px;
+  top:8px;
+}
+#header div.nav>ul>li>a{
+  display:block;
+  font-size:13px;
+  position: relative;
+  text-align: center;
+}
+#header div.nav>ul>li>span{
+  display:block;
+  font-size:9px;
+  color:#C0C0CD;
+  position:relative; 
+  text-align: center;
+}
+  /*下拉列表*/
+#header div.nav>ul>li>ul.nav-drop{
+  z-index:3;
+  width:90px;
+  margin-top:25px;
+  background-color:#C0C0CD;
+  /*border:1px solid #000;*/
+  /*padding:10px 10px;*/
+  opacity: 0.6;
+  /*background-image:url(../img/images/nav2.png);*/
+  position:absolute;
+  right:-10px;
+  overflow:hidden;
+  height:0;
+  /*display:none;*/
+  transition: all .4s linear;
+}
+#header div.nav>ul>li>ul.nav-drop>li>a{
+  color:#000;
+}
+#header div.nav>ul>li:hover ul.nav-drop{
+  padding:10px 10px;
+  overflow:visible;
+  height:150px;
+}
+#header div.nav>ul>li>ul.nav-drop>li{
+  margin-top:10px;
+  opacity:1;
+  color:#000;
+}
+/*下拉列表高度*/
+#header div.nav>ul>li:first-child:hover ul.nav-drop{
+  height:10px;
+}
+#header div.nav>ul>li:nth-child(5):hover ul.nav-drop{
+  height:150px;
+}
+#header div.nav>ul>li:nth-child(3):hover ul.nav-drop{
+  height:120px;
+}
+#header div.nav>ul>li:nth-child(7):hover ul.nav-drop{
+  height:10px;
+}
+#header div.nav>ul>li:nth-child(9):hover ul.nav-drop{
+  height:150px;
+}
+#header div.nav>ul>li:nth-child(11):hover ul.nav-drop{
+  height:10px;
+}
+#header div.nav>ul>li:nth-child(13):hover ul.nav-drop{
+  height:10px;
+}
+/************************/
+
+
+
+
+
+
+
